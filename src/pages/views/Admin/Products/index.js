@@ -107,7 +107,7 @@ const Products = ({products, onRemove,onSearch}) => {
         {pageNumbers.map(page => (
           <li
             className={`${currentPage === page && "active"}`}
-            onClick={()=>handleClick( page)}
+            // onClick={()=>handleClick( page)}
           >
             {page}
           </li>

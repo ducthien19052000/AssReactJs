@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 import {Link,NavLink} from "react-router-dom"
-
+import 'element-theme-default';
 import {connect} from 'react-redux';
 import {addToCart} from '../../../../actions/index'
 
@@ -248,7 +248,13 @@ const Home = ({products,onDetail,AddToCart}) => {
             <a className="hvr-outline-out button2" href="single.html">Shop Now </a>
           </div>
         </div>
+        
+     <div className="grid-content bg-purple"></div>
+     <div className="grid-content bg-purple"></div>
+      <div className="grid-content bg-purple"></div>
+   <div className="grid-content bg-purple"></div>
       </div>
+
       
     )
 }

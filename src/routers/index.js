@@ -63,9 +63,9 @@ const Routers = ({products,onRemove,onAdd,onUpdate,onDetail,onSearch,category,on
                             }>
                         
                             </Route>
-                            <Route path='/admin/add-product'  >
+                            {/* <Route path='/admin/add-product'  >
                                 <AddProduct onAdd={onHandleAdd} category={category} />
-                            </Route>
+                            </Route> */}
                             <Route path='/admin/product/:id'>
                                 <UpdateProduct products={products}  onUpdate={onHandleUpdate} category={category}/>
                             </Route>

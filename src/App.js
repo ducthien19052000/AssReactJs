@@ -7,8 +7,16 @@ import apiCategory from "./api/categoryHttp";
 import { useEffect } from 'react';
 import { Provider } from 'react-redux';
 import store from './store';
+import Fuse from 'fuse.js';
+import db from "./db.json"
 
 function App() {
+  const fuse = new Fuse(db,{
+    key:['id'],
+    includeScore:true
+  });
+  const a=fuse.search("1")
+  console.log(a)
   const[products, setProducts]=React.useState([]);
   const [category,setCategory]= useState([]);
   //Danh mục sản phẩm
@@ -59,7 +67,6 @@ function App() {
     try{
       console.log(product)
       const {data} =  await apiProduct.createProduct(product);
-
       setProducts([...products,data])
     }catch(error){
       console.log('Fail to request API',error)

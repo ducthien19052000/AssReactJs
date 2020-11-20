@@ -50,8 +50,8 @@ const Dashboard = ({products,category}) => {
       <div className="market-update-block clr-block-3">
         <div className="col-md-8 market-update-left">
           <h3>{about.length}</h3>
-          <h4> Messages</h4>
-          <p>Other hand, we denounce</p>
+          <h4> Bài viết</h4>
+          <p>Tổng số bài viết</p>
         </div>
         <div className="col-md-4 market-update-right">
           <i className="fa fa-envelope-o"> </i>

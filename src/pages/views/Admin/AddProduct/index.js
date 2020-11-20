@@ -124,6 +124,7 @@ const AddProduct = ({onAdd,category}) => {
                
               </div>
               <select type="text" name="category" formcontrolname="category" ref={register({required:true})} >
+                <option></option>
                 {category.map((cate,index)=>(
                     <option  value={cate.name}>{cate.name}</option>
                 ))}

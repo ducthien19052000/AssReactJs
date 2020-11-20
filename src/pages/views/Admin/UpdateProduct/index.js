@@ -15,7 +15,7 @@ const UpdateProduct = ({products,onUpdate,category}) => {
   useEffect(()=>{
     const getProduct =async()=>{
       try{
-        const {data}= await apiProduct.getProduct(id);
+        const {data}= await apiProduct.getProduct(200);
         console.log(data)
         setCurrentProduct(data)
       }
@@ -24,7 +24,7 @@ const UpdateProduct = ({products,onUpdate,category}) => {
       }
     }
     getProduct()
-  },{})
+  },[])
 
 
   const onHandleChange = e => {
